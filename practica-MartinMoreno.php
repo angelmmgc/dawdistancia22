@@ -36,27 +36,13 @@ function saludo($nombre,$apellido){
         return "<h1>HOLA MUNDO SOY  {$nombre} {$apellido}</h1>";
 }
 
-/*
-*funcion que muestra un texto.
-*@author
-*@version 0
-*@internal .muestra un texto con el modulo favorito introducido en el campo de >
-*@param $modulo.  string .guarda el modulo.
-*@return type void.
-*/
 
-function modulo($modulo){
-
-        return "<h2>MI MODULO FAVORITO ES {$modulo}</h2>";
-
-}
 
 //guardamos en las variables los datos de los campos de texto
         $nombre= $_POST['nombre'];
         $apellido=$_POST['apellido'];
-        $modulo = $_POST['modulo'];
+       
 //ejecutamos las funciones
         echo saludo($nombre,$apellido);
-        echo modulo($modulo);
 
 ?>
